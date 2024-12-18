@@ -1,0 +1,188 @@
+
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+body {
+    overflow: hidden; 
+}
+
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sidebar .new-chat
+{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+.sidebar .recent{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 370px;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.sidebar .recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 370px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 150px); /* Adjust height based on available space */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.sidebar .recent::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and other WebKit-based browsers */
+}
+
+.sidebar .load-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: #e6eaf1; 
+    color: #555; 
+    font-size: 14px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.sidebar .load-more:hover {
+    background-color: #d5dae0; 
+    color: #000;
+}
+
+
+.recent-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .chat-content {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .chat-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+
+/* Style for the menu dropdown */
+.menu-dropdown {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 10;
+}
+
+/* Style the buttons inside the dropdown */
+.menu-dropdown button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+/* Hover effect for buttons */
+.menu-dropdown button:hover {
+  background-color: #ccc;
+}
+
+/* Additional styling for button layout */
+.menu-dropdown button:first-child {
+  background-color: white; /* Green for Rename */
+}
+
+.menu-dropdown button:first-child:hover {
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
